@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="body bg-emerald-900">
+    <h1 class="cursor-pointer text-6xl text-center font-bold font-serif text-green-400 transition duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)] ">BMI CALCULATOR</h1>
+    <div class=" m-12 flex items-center justify-center bg-emerald-600">
+        <form class="flex flex-col">
+            <label for="weight" class="text-6xl"> Weight: </label>
+           <span   class="bg-white p-4 rounded-3xl m-2"><input id= "weight" type="text" placeholder="Enter your weight in Kg" class="text-[30px] outline-none"></span> 
+            <label   class="text-6xl mt-4">height:</label>
+           <span    class="bg-white p-4  rounded-3xl m-2 mt-4"> <input id= "height" type="text" placeholder="Enter your height in cm" class="text-[30px] outline-none"></span> 
+        </div>
+        <div class="flex justify-center">
+            <button id="button" class="px-4 py-2 bg-green-400 text-white rounded-lg hover:shadow-[0_0_15px_#5CFF5C] transition  hover:scale-125 hover:shadow-2xl">Calculate</button>
+        </div>
+        <div class="results items-center bg-green-400 text-center font-bold m-2 text-2xl"></div>
+        <div class="conclusion items-center bg-green-400 text-center font-bold m-2 text-2xl"></div>
+    </form>
+    <div class=" flex flex-col p-8 items-center bg-green-400 m-4">
+            <h1 class="font-bold text-2xl">BMI WEIGHT GUIDE</h1>
+            <p>Under weight= less than 18.6</p>
+            <p>Normal range = 18.6 - 24.9</p>
+            <p>Over weight= more than 24.9</p>
+    </div>
+</body>
+<script src="BMI.js"></script>
+</html>

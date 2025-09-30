@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form submission</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-emerald-600 min-h-screen flex items-center justify-center   ">
+    <form class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-xl space-y-6 ">
+    <p class="text-center text-4xl font-serif font-bold">Please Fill the Form given below</p>
+    <div class="flex  items-center justify-center m-6 ">
+        <label class="m-2 font-bold">First name</label>
+        <input type="text" placeholder="enter your first name" class="border rounded-3xl text-center">
+        <label class="m-2 font-bold">last name</label>
+        <input type="text" placeholder="enter your last name"class="border rounded-3xl text-center">
+    </div>
+    <div class="flex  items-center justify-center ">
+        <label class="mt-2 mr-2 font-bold">Email</label>
+        <input type="email" placeholder="enter your email id" class="border rounded-3xl text-center">
+        <label class="m-6 font-bold">Phone no:<label>
+        <input type="text" placeholder="enter your phone number"class="border rounded-3xl text-center ml-6">
+    </div>
+    <div class="flex  items-center justify-center">
+        <span class="p-4 font-bold">Gender:</span>
+        <label for="male" class="p-8">male</label>
+        <input type="radio" >
+        <label for="Female" class="p-8">Female</label>
+        <input type="radio" >
+        <label for="others" class="p-8" >others</label>
+        <input type="radio">
+    </div>
+    <div class="flex  items-center justify-center">
+         <span class="p-4 font-bold">Education:</span>
+         <label for="10" class="p-8">10th</label>
+        <input type="checkbox" >
+        <label for="12th" class="p-8">12th</label>
+        <input type="checkbox" >
+        <label for="Graduation" class="p-8" >Graduation</label>
+        <input type="checkbox">
+        <label for="postgraduation"class="p-8">Post graduation</label>
+         <input type="checkbox">
+    </div>
+    <div class="flex  items-center justify-center">
+        <span class="p-4 font-bold">State:</span>
+        <label for="states">Select your state</label>
+         <select id="states" name="states">
+           <option value="andhra-pradesh">Andhra Pradesh</option>
+            <option value="arunachal-pradesh">Arunachal Pradesh</option>
+            <option value="assam">Assam</option>
+            <option value="bihar">Bihar</option>
+            <option value="chhattisgarh">Chhattisgarh</option>
+            <option value="goa">Goa</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="haryana">Haryana</option>
+            <option value="himachal-pradesh">Himachal Pradesh</option>
+            <option value="jharkhand">Jharkhand</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="kerala">Kerala</option>
+            <option value="madhya-pradesh">Madhya Pradesh</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="manipur">Manipur</option>
+            <option value="meghalaya">Meghalaya</option>
+            <option value="mizoram">Mizoram</option>
+            <option value="nagaland">Nagaland</option>
+            <option value="odisha">Odisha</option>
+            <option value="punjab">Punjab</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="sikkim">Sikkim</option>
+            <option value="tamil-nadu">Tamil Nadu</option>
+            <option value="telangana">Telangana</option>
+            <option value="tripura">Tripura</option>
+            <option value="uttar-pradesh">Uttar Pradesh</option>
+            <option value="uttarakhand">Uttarakhand</option>
+            <option value="west-bengal">West Bengal</option>
+
+            <!-- Union Territories -->
+            <option value="andaman-nicobar">Andaman and Nicobar Islands</option>
+            <option value="chandigarh">Chandigarh</option>
+            <option value="dadra-nagar-haveli-daman-diu">Dadra and Nagar Haveli and Daman and Diu</option>
+            <option value="delhi">Delhi (NCT)</option>
+            <option value="jammu-kashmir">Jammu and Kashmir</option>
+            <option value="ladakh">Ladakh</option>
+            <option value="lakshadweep">Lakshadweep</option>
+            <option value="puducherry">Puducherry</option>
+      </select>
+    </div>
+    <div class="flex  items-center justify-center">
+        <button class="font-bold font-serif hover:bg-blue-600 border p-2 rounded-3xl">Submit</button>
+    </div>
+    </form>
+</body>
+<script src="form.js"></script>
+</html>

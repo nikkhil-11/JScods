@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async javascript</title>
+</head>
+<body>
+    <h1>Async programing learning</h1>
+    <button id="close">Close </button>
+</body>
+<script>
+
+const aukaat = function(){
+    document.querySelector('h1').innerHTML="Tumse na HO payega"
+}
+
+const changeMe = setTimeout(aukaat,3000)    //setTimeout runs a function once after a delay you set (in milliseconds).
+
+document.querySelector('#close').addEventListener('click',() => {
+    clearTimeout(changeMe)                  // it used for stoping the settimeout method we used here on click event on our Button which ID is #close
+})
+   
+    
+</script>
+</html>

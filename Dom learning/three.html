@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and removal</title>
+</head>
+<body style="background-color: #212121; color: bisque;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+        function addLanguage(langName){
+            const li = document.createElement("li");
+            console.log(li)
+            li.innerHTML=`${langName}`
+            document.querySelector('.language').appendChild(li)
+        }
+        function optAddLanguage(langName){
+            const li = document.createElement("li")
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li)
+        }
+        optAddLanguage("python")
+        optAddLanguage("typescript")
+        const secondLang = optAddLanguage.querySelector("li:nth-child(2)")
+//--------EDIT----------------------------------------------------------------
+const newLi=document.createElement('li')
+newLi.textContent="Mojo"
+secondLang.replaceWith(newLi)
+</script>
+</html>

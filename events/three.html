@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firse Async javascript</title>
+</head>
+<body>
+    h1>Async programing learning</h1><br>
+    <button id="start">Start </button>
+    <button id="stop">stop</button>
+</body>
+<script>
+   let stopInterval=null
+    document.querySelector('#start').addEventListener('click', function(){
+      stopInterval = setInterval(()=>{  console.log("Interval has started")} , 1000)
+    })
+     document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(stopInterval)
+    })
+    //****FUNCTION IS STRICTY SCOPED. NO VAR, LET CAN BE ACCESSED OUTSIDE THE FUNCTION LIKE stopInterval
+    // THAT IS WHY WE DECLARE THE stopInterval OUTSIDE FUNCTION WITH THE VALUE OF NULL
+</script>
+</html>
